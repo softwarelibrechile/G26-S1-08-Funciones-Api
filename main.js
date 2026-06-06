@@ -20,7 +20,8 @@ async function getDataExampleAll() {
       showDataExampleAll(response.data);
     })
     .catch((error) => {
-      console.error(error);
+        console.log(error);
+      alert('Ocurrió un error al obtener los datos. (Status del Error: ' + error + ')');
     })
     .finally(() => {
       console.log("Request completed");
