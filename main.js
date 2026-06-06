@@ -14,7 +14,7 @@ async function getDataExampleAxios() {
 
 async function getDataExampleAll() {
   const response = await axios
-    .get("https://jsonplaceholder.typicode.com/posts")
+    .get("https://jsonplaceholder.typicode.com/")
     .then((response) => {
       console.log(response.data);
       showDataExampleAll(response.data);
