@@ -41,50 +41,30 @@
         </header>
         <div class="p-5 mb-4 bg-body-tertiary rounded-3">
           <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+            <h1 class="display-5 fw-bold">Obtener información</h1>
             <p class="col-md-8 fs-4">
-              Using a series of utilities, you can create this jumbotron, just
-              like the one in previous versions of Bootstrap. Check out the
-              examples below for how you can remix and restyle it to your
-              liking.
+              Usando una serie de utilidades, puedes crear este jumbotron, al igual que en versiones anteriores de Bootstrap. Consulta los ejemplos a continuación para ver cómo puedes mezclar y restilarlo a tu gusto.
             </p>
-            <button class="btn btn-primary btn-lg" type="button">
-              Example button
+            <button class="btn btn-primary btn-lg btn-obtener-informacion" type="button" id="btn-obtener-informacion" onclick="getDataExampleAll()">
+              Obtener información
             </button>
           </div>
         </div>
-        <div class="row align-items-md-stretch">
-          <div class="col-md-6">
-            <div class="h-100 p-5 text-bg-dark rounded-3">
-              <h2>Change the background</h2>
-              <p>
-                Swap the background-color utility and add a `.text-*` color
-                utility to mix up the jumbotron look. Then, mix and match with
-                additional component themes and more.
-              </p>
-              <button class="btn btn-outline-light" type="button">
-                Example button
-              </button>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-              <h2>Add borders</h2>
-              <p>
-                Or, keep it light and add a border for some added definition to
-                the boundaries of your content. Be sure to look under the hood
-                at the source HTML here as we've adjusted the alignment and
-                sizing of both column's content for equal-height.
-              </p>
-              <button class="btn btn-outline-secondary" type="button">
-                Example button
-              </button>
-            </div>
-          </div>
-        </div>
+
+        <table class="table js-posts">
+            <thead>
+                <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Titulo</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            </table>
         <footer class="pt-3 mt-4 text-body-secondary border-top">© 2025</footer>
       </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios@latest/dist/axios.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
